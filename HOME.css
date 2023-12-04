@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.debug{
+    border: 2px solid red;
+}
+.debug1{
+    border: 2px solid blue;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+}
+
+img{
+    max-width: 100px;
+    max-height: auto;
+}
+
+.buttonGioco{
+    background-color: red;
+    width: 100px;
+    margin-left:380px;
+    margin-bottom: 10px;
+    /* position: absolute; */
+    /* position: fixed; */
+
+}
+
+
+
+
+.containerCard1, .containerCard2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.containerCard1 > .casellaGioco{
+    display: flex;
+    background-color: gray;
+    border: 2px solid red;
+    width: 500px;
+}
+/* .wrapCasellaGioco{
+
+} */
