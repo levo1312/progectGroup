@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rock, paper, scissors</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="SassoCartaForbici.css">
+</head>
+
+<body>
+  <h1>Sasso Carta Forbici... Lucertola Spock!</h1>
+  <div class="show-choises">
+    <h2>Scelta del computer: <span id="computer-choice"></span></h2>
+    <h2>La tua scelta: <span id="user-choice"></span></h2>
+    <h2>Risultato: <span id="result"></span></h2>  
+  </div>
+
+  <div class="wrapper">
+
+    <div class="group-choises">
+      <label class="choises">
+        <input type="radio" id="sasso" name="choice" value="rock">
+        <img src="assets/rock.png" alt="Immagine sasso">
+        <label for="rock">Sasso</label>
+      </label>
+    
+      <label class="choises">
+        <input type="radio" id="carta" name="choice" value="paper">
+        <img src="assets/paper.png" alt="Immagine sasso">
+        <label for="paper">Carta</label>
+      </label>
+    
+      <label class="choises">
+        <input type="radio" id="forbici" name="choice" value="scissors">
+        <img src="assets/scissor.png" alt="Immagine sasso">
+        <label for="scissors">Forbici</label>
+      </label>
+    
+      <label class="choises">
+        <input type="radio" id="lucertola" name="choice" value="lizard">
+        <img src="assets/lizard.png" alt="Immagine sasso">
+        <label for="lizard">Lucertola</label>
+      </label>
+    
+      <label class="choises">
+        <input type="radio" id="spock" name="choice" value="spock">
+        <img src="assets/spock.png" alt="Immagine sasso">
+        <label for="spock">Spock</label>
+      </label>
+  
+    </div>
+
+    <div class="button-block">
+      <button id="play" disabled>Gioca</button>
+      <h2>Punteggio: <span id="score"></span></h2>
+    </div>
+    
+    
+  </div>
+  
+
+
+
+  <script src="SassoCartaForbici.js"></script>
+</body>
+
+</html>

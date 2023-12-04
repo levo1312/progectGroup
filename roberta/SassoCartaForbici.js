@@ -1,5 +1,4 @@
-
-const choicesArray = ['Sasso', 'Carta', 'Forbici', 'Lucertola', 'Spock'];
+const choicesArray = ['sasso', 'carta', 'forbici', 'lucertola', 'spock'];
 
 
 let playButton = document.getElementById('play');
@@ -15,7 +14,6 @@ let resultDisplay = document.getElementById('result');
 const userChoice = document.getElementById('user-choice');
 
 playButton.addEventListener('click', (e) => {
-    console.log("button");
     let buttonsArray = Array.from(choices);
 
     let selected = buttonsArray.filter((i) => i.checked);
@@ -36,10 +34,10 @@ playButton.addEventListener('click', (e) => {
     })
 })
 
+//Scrive su span
 function addTextToSpan(spanControl, text) {
     spanControl.textContent = text;
 }
-
 
 
 let computerChoice = document.getElementById('computer-choice');
@@ -47,59 +45,57 @@ let computerChoice = document.getElementById('computer-choice');
 function generateComputerChoice() {
     let randomItem = Math.floor(Math.random() * choicesArray.length);
     let compChoice = choicesArray[randomItem];
-    addTextToSpan(computerChoice, choicesArray[randomItem]);
+    addTextToSpan(computerChoice, compChoice);
     return compChoice;
 }
 
 
-
 //Compara le scelte e stampa i risultati
 function showResult(userChoice, computerChoice) {
-    console.log("ciao2");
     switch (userChoice) {
-        case 'rock':
+        case 'sasso':
             switch (computerChoice) {
-                case 'rock':
+                case 'sasso':
                     addTextToSpan(resultDisplay, "Pareggio!"); 
-                    console.log("ciao");
                     break;        
-                case 'paper':
+                case 'carta':
                     addTextToSpan(resultDisplay, "Hai perso... Carta avvolge sasso");
-                    console.log("ciao");
                     break;
-                case 'scissors':
+                case 'forbici':
                     addTextToSpan(resultDisplay, "Hai vinto! Sasso rompe forbici");
-                    console.log("ciao");
+                    addToScore();
                     break;
-                case 'lizard':
+                case 'lucertola':
                     addTextToSpan(resultDisplay, "Hai vinto! Sasso schiaccia lucertola");
-                    console.log("ciao");
+                    addToScore();
                     break;
                 case 'spock':
                     addTextToSpan(resultDisplay, "Hai perso... Spock vaporizza sasso");
-                    console.log("ciao");
                     break;
                 default:
                     return "Scelta non valida";
             }
+
             break;
 
-        case 'paper':
+        case 'carta':
             switch (computerChoice) {
-                case 'rock':
+                case 'sasso':
                     addTextToSpan(resultDisplay, "Hai vinto! Carta avvolge sasso");
+                    addToScore();
                     break;
-                case 'paper':
+                case 'carta':
                     addTextToSpan(resultDisplay, "Pareggio!");
                     break;
-                case 'scissors':
+                case 'forbici':
                     addTextToSpan(resultDisplay, "Hai perso... Forbici tagliano carta");
                     break;
-                case 'lizard':
+                case 'lucertola':
                     addTextToSpan(resultDisplay, "Hai perso... Lucertola mangia carta");
                     break;
                 case 'spock':
                     addTextToSpan(resultDisplay, "Hai vinto! Carta disintegra Spock");
+                    addToScore();
                     break;
 
                 default:
@@ -107,22 +103,25 @@ function showResult(userChoice, computerChoice) {
             }
             break;
 
-        case 'scissors':
+        case 'forbici':
             switch (computerChoice) {
-                case 'rock':
-                    addTextToSpan(resultDisplay, "Hai perso... Sasso schiaccia forbici");
+                case 'sasso':
+                    addTextToSpan(resultDisplay, "Hai perso... Sasso rompe forbici");
                     break;
-                case 'paper':
+                case 'carta':
                     addTextToSpan(resultDisplay, "Hai vinto! Forbici tagliano carta");
+                    addToScore();
                     break;
-                case 'scissors':
+                case 'forbici':
                     addTextToSpan(resultDisplay, "Pareggio!");
                     break;
-                case 'lizard':
+                case 'lucertola':
                     addTextToSpan(resultDisplay, "Hai vinto! Forbici decapitano lucertola");
+                    addToScore();
                     break;
                 case 'spock':
                     addTextToSpan(resultDisplay, "Hai vinto! Carta disintegra Spock");
+                    addToScore();
                     break;
 
                 default:
@@ -130,23 +129,26 @@ function showResult(userChoice, computerChoice) {
             }
             break;
 
-            case 'lizard':
+            case 'lucertola':
                 switch (computerChoice) {
-                    case 'rock':
+                    case 'sasso':
                         addTextToSpan(resultDisplay, "Hai perso... Sasso schiaccia lucertola");
                         break;
-                    case 'paper':
+                    case 'carta':
                         addTextToSpan(resultDisplay, "Hai vinto! Lucertola mangia carta");
+                        addToScore();
                         break;
-                    case 'scissors':
+                    case 'forbici':
                         addTextToSpan(resultDisplay, "Hai perso... Forbici decapitano lucertola");
+                        addToScore();
                         break;
-                    case 'lizard':
+                    case 'lucertola':
                         addTextToSpan(resultDisplay, "Pareggio!");
                         break;
                     case 'spock':
                         addTextToSpan(resultDisplay, "Hai vinto! Lucertola avvelena Spock");
-                        break;                    
+                        addToScore();
+                        break;                   
                     
                     default:
                         return "Scelta non valida";
@@ -155,16 +157,18 @@ function showResult(userChoice, computerChoice) {
 
                 case 'spock':
                     switch (computerChoice) {
-                        case 'rock':
+                        case 'sasso':
                             addTextToSpan(resultDisplay, "Hai vinto! Spock vaporizza il sasso");
+                            addToScore();
                             break;
-                        case 'paper':
+                        case 'carta':
                             addTextToSpan(resultDisplay, "Hai perso... Carta disintegra Spock");
                             break;
-                        case 'scissors':
-                            addTextToSpan(resultDisplay, "Hai perso... Spock frantuma forbici");
+                        case 'forbici':
+                            addTextToSpan(resultDisplay, "Hai vinto! Spock frantuma forbici");
+                            addToScore();
                             break;
-                        case 'lizard':
+                        case 'lucertola':
                             addTextToSpan(resultDisplay, "Hai perso... Lucertola avvelena Spock");
                             break;
                         case 'spock':
@@ -180,3 +184,13 @@ function showResult(userChoice, computerChoice) {
             return "Scelta non valida";
     }
 }
+
+let score = 0;
+let userScore = document.getElementById('score');
+
+function addToScore(){
+    score++;
+    console.log(score);
+    userScore.textContent = score;
+}
+
