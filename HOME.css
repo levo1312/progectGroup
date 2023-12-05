@@ -127,7 +127,8 @@ img{
   }
   
   .pagine p,
-  .link p {
+  .link p,
+  h1{
     margin: 15px 0;
     font-size: 30px;
     text-decoration: underline;
