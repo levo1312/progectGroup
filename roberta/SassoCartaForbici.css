@@ -10,7 +10,7 @@ span {
 
 /* inizio css nav */
 header{
-  background-color: #ccc;
+  background-color: rgb(29, 0, 29);
 }
 
 header .container{
@@ -30,7 +30,7 @@ header nav{
 }
 
 header nav a{
-  color: black;
+  color: white;
   text-decoration: none;
   transition: all ease 200ms;
   position: relative;
@@ -39,7 +39,7 @@ header nav a{
 }
 
 header nav a:hover{
-  color: red;
+  color: palevioletred;
   transform: scale(1.2);
 }
 
@@ -47,7 +47,7 @@ header nav a::after{
   content: "";
   width: 0;
   height: 2px;
-  background-color: red;
+  background-color: palevioletred;
   display: block;
   transition: all ease 200ms;
   position: absolute;
@@ -63,7 +63,8 @@ header nav a:hover::after{
 main{
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
-  background-color: black;
+  background-image: url(/assets/1082.jpg);
+  background-size: cover;
   color: white;
   height: calc(100vh - 220px);
 }
@@ -164,7 +165,7 @@ h1{
   justify-content: space-between;
   height: 150px;
   flex-wrap: nowrap;
-  background-color: black;
+  background-color: rgb(29, 0, 29);;
 }
 
 .pagine ul, .link ul {
@@ -175,6 +176,7 @@ h1{
 
 .pagine a, .link a {
   text-decoration: none;
+  color: #fff;
 }
 
 .pagine p, .link p {
