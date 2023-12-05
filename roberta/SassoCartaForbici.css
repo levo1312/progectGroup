@@ -24,6 +24,17 @@ body{
   gap: 100px;
 }
 
+#show{
+  display: none;
+}
+
+.show-choises{
+  display: block !important;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color: white;
+}
+
 /* HIDE RADIO */
 [type=radio] { 
     position: absolute;
@@ -68,9 +79,9 @@ body{
   }
 
   #play{
-    padding: 15px 20px;
+    padding: 8px 25px;
     background-color: #F9AC0F;
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 600;
   }
 

@@ -32,6 +32,8 @@ playButton.addEventListener('click', (e) => {
     choices.forEach((b) => {
         b.checked = false;
     })
+
+    show.classList.add("show-choises");
 })
 
 //Scrive su span
