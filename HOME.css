@@ -86,7 +86,7 @@ main{
     height: 100vh;
     background-color: grey;
     font-family: sans-serif;
-    gap: 24px;
+    gap: 48px;
 }
 
 .card{
