@@ -3,7 +3,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/gabriele/img/sfondo\ gigante.jpg);
+  background-image: url(/gabriele/img/sfondo.jpg);
   font-family: cursive;
 }
 
@@ -66,7 +66,7 @@ body {
 @media screen and (max-width: 430px) {
   body {
     height: 100vh;
-    background-image: url(/gabriele/img/sfondo\ gigante.jpg);
+    background-image: url(/gabriele/img/sfondo.jpg);
   }
   .contenitore {
     height: 500px;
@@ -87,7 +87,7 @@ body {
 @media screen and (max-width: 1024px) {
   body {
     height: 100vh;
-    background-image: url(/gabriele/img/sfondo\ gigante.jpg);
+    background-image: url(/gabriele/img/sfondo.jpg);
   }
   .contenitore {
     height: 500px;
