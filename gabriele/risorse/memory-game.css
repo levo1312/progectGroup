@@ -1,0 +1,108 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/gabriele/img/sfondo\ gigante.jpg);
+  font-family: cursive;
+}
+
+.contenitore {
+  height: 600px;
+  width: 1000px;
+
+  background-color: rgba(144, 144, 174, 0.32);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/gabriele/img/sfondo-tavolo.jpg);
+  border-radius: 10px;
+  background-size: cover;
+}
+
+/*  carte*/
+.card {
+  width: 150px;
+  height: 200px;
+  background-color: brown;
+
+  cursor: pointer;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* immagini */
+.card img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  display: none;
+}
+
+/* contatori */
+.contatori {
+  display: flex;
+  gap: 30px;
+  font-size: 30px;
+  margin-top: 10px;
+  background-color: rgb(137, 193, 193);
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.contatori .bottone {
+  border-radius: 10px;
+  background-color: #F9AC0F;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    height: 100vh;
+    background-image: url(/gabriele/img/sfondo\ gigante.jpg);
+  }
+  .contenitore {
+    height: 500px;
+    width: 400px;
+    background-image: url(/gabriele/img/sfondo-tavolo.jpg);
+    border-radius: 10px;
+    background-size: cover;
+  }
+  .card {
+    height: 100px;
+    width: 60px;
+  }
+  .contatori {
+    font-size: 10px;
+    font-weight: bolder;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    height: 100vh;
+    background-image: url(/gabriele/img/sfondo\ gigante.jpg);
+  }
+  .contenitore {
+    height: 500px;
+    width: 700px;
+    background-image: url(/gabriele/img/sfondo-tavolo.jpg);
+    border-radius: 10px;
+    background-size: cover;
+  }
+  .card {
+    height: 100px;
+    width: 100px;
+    
+  }
+  .contatori {
+    font-size: 10px;
+    font-weight: bolder;
+  }
+}
