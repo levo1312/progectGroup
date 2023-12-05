@@ -4,19 +4,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(/gabriele/risorse/img/sfondo\ gigante.jpg);
+  font-family: cursive;
 }
 
 
 .contenitore {
   height: 600px;
   width: 1000px;
-  border: 2px solid red;
+  
   background-color: rgba(144, 144, 174, 0.32);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  background-image: url(/gabriele/risorse/img/sfondo-tavolo.jpg);
+  border-radius: 10px;
+  background-size: cover;
 }
 
 /*  carte*/
@@ -24,10 +29,12 @@ body {
   width: 150px;
   height: 200px;
   background-color: brown;
+  
   cursor: pointer;
   border: 1px solid black;
   display: flex;
   justify-content: center;
+  border-radius: 10px;
 }
 
 /* immagini */
@@ -42,4 +49,17 @@ body {
 .contatori {
   display: flex;
   gap:30px;
+  font-size: 30px;
+  margin-top: 10PX;
+  background-color: rgb(137, 193, 193);
+  justify-content: center;
+  border-radius: 10px;
 }
+
+.contatori .bottone{
+   border-radius: 10PX ;
+   background-color: red;
+   font-weight: bold;
+}
+
+
