@@ -6,6 +6,39 @@
     <title>IMPICCATO</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div>logo</div>
+            <div><h1>IMPICCATO</h1></div>
+            <div>MENU(altri giochi)</div>
+        </nav>
+    </header>
+    <main>
+        <div class="introGame">
+            piccola intruzione al gioco
+        </div>
+        <div class="interazione">
+                <input type="text" id="inputUtent" placeholder=" inserisci una lettera">
+                <button onclick="game()">INVIA</button>
+        </div>
+        <div id="secretWord">
+            <h1 id="misteryWord">
+                parola da indovinare
+            </h1>
+        </div>
+        <div class="contenitoreAnimazione">ANIMAZIONE</div>
+        <!-- animazione gioco
+        all'input del utente provare a posizionare la
+        lettera indovinata nella posizione della parola
+        nel caso di lettera errata andare a avanti con 
+        la composizione del stick man 
+        STICKMAN(6 tentivi):
+        -testa
+        -torso
+        -braccia (x2)
+        -gambe(x2)
+         -->
+    </main>
     <script src="IMPICCATO.js"></script>
 </body>
 </html>
