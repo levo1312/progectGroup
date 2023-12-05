@@ -41,5 +41,5 @@ body {
 /* contatori */
 .contatori {
   display: flex;
-  gap: 300px;
+  gap:30px;
 }

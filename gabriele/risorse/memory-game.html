@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="memory-game.css">
-    <title>memory-game</title>
-    
+    <title>Document</title>
 </head>
 
 <body>
+
+
     <div class="big-container">
         <!-- Div che contiene le carte -->
         <div class="contenitore" id="contenitore">
@@ -29,11 +30,15 @@
         </div>
         <!-- Div per i contatori -->
         <div class="contatori">
-            <div id="errore">Errori commessi: 0</div>
+            <div id="errore">Errori commessi: 0 </div>
+            <div id="timer">Tempo di gioco: 0m 0s</div>
+            <button id="resetButton" onclick="resetGame() , stopTimer(), resetTimer()">Reset</button>
+            
         </div>
     </div>
 
- <script src="memory-game.js"></script>
+     <script src="memory-game.js"></script> 
+
 </body>
 
 </html>
