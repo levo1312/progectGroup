@@ -8,6 +8,11 @@ div{
     border: 2px solid blueviolet;
 }
 
+body{
+    background-color: black;
+    color: white;
+}
+
 nav{
     border: 2px solid aquamarine;
     height: 100px;
@@ -15,6 +20,7 @@ nav{
     display: flex;
     padding: 10px;
     justify-content: space-between;
+    background-color: aquamarine;
 }
 
 /*classi*/
@@ -26,4 +32,18 @@ nav{
 
 .titoloPag{
     text-align: center;
+}
+
+/*menu altri giochi*/
+
+.introGame.p{
+    text-align: center;
+}
+
+.introGame{
+    align-items: center;
+    display: flex;
+    background-color: chocolate;
+    width: 600px;
+    height: 300px;
 }
