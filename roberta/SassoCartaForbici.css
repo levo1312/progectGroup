@@ -1,12 +1,81 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 span {
     text-transform: capitalize;
 }
 
-body{
+/* inizio css nav */
+header{
+  background-color: #ccc;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 16px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+header nav{
+  display: flex;
+  gap: 20px;
+}
+
+header nav a{
+  color: black;
+  text-decoration: none;
+  transition: all ease 200ms;
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+header nav a:hover{
+  color: red;
+  transform: scale(1.2);
+}
+
+header nav a::after{
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: red;
+  display: block;
+  transition: all ease 200ms;
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+}
+
+header nav a:hover::after{
+  width: 100%;
+}
+/* fine css nav */
+
+main{
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   background-color: black;
   color: white;
+  height: calc(100vh - 220px);
+}
+
+h1{
+  color: #F9AC0F;
+  font-size: 48px;
+  padding: 15px;
+}
+
+.show{
+  gap: 15px;
 }
 
 .group-choises{
@@ -25,11 +94,15 @@ body{
 }
 
 #show{
-  display: none;
+  visibility: hidden;
+}
+
+#show h2{
+  padding: 10px;
 }
 
 .show-choises{
-  display: block !important;
+  visibility: visible !important;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   color: white;
@@ -84,4 +157,48 @@ body{
     font-size: 20px;
     font-weight: 600;
   }
+
+  /* inizio css footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  flex-wrap: nowrap;
+  background-color: black;
+}
+
+.pagine ul, .link ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pagine a, .link a {
+  text-decoration: none;
+}
+
+.pagine p, .link p {
+  margin: 15px 0;
+  font-size: 22px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.pagine li, .link li {
+  list-style-type: none;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer span {
+  margin-top: 100px;
+  font-size: 0.9em;
+  color: #fff;
+}
+/* fine css footer */
 

@@ -7,58 +7,96 @@
   <link rel="stylesheet" href="SassoCartaForbici.css">
 </head>
 
+
 <body>
-  <h1>Sasso Carta Forbici... Lucertola Spock!</h1>
-  <div id="show">
-    <h2>Scelta del computer: <span id="computer-choice"></span></h2>
-    <h2>La tua scelta: <span id="user-choice"></span></h2>
-    <h2>Risultato: <span id="result"></span></h2>  
-  </div>
+  <header>
+    <div class="container">
+      <img src="./assets/logoipsum-300.svg" alt="log" />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Giochi</a>
+        <!-- <a href="#">Blog</a>
+        <a href="#">Contacts</a> -->
+      </nav>
+    </div>
+  </header>
 
-  <div class="wrapper">
+  <main>
+      <h1>Sasso Carta Forbici... Lucertola Spock!</h1>
+      <div id="show">
+        <h2>Scelta del computer: <span id="computer-choice"></span></h2>
+        <h2>La tua scelta: <span id="user-choice"></span></h2>
+        <h2>Risultato: <span id="result"></span></h2>  
+      </div>
 
-    <div class="group-choises">
-      <label class="choises">
-        <input type="radio" id="sasso" name="choice" value="rock">
-        <img src="assets/rock.png" alt="Immagine sasso">
-        <label for="rock">Sasso</label>
-      </label>
-    
-      <label class="choises">
-        <input type="radio" id="carta" name="choice" value="paper">
-        <img src="assets/paper.png" alt="Immagine sasso">
-        <label for="paper">Carta</label>
-      </label>
-    
-      <label class="choises">
-        <input type="radio" id="forbici" name="choice" value="scissors">
-        <img src="assets/scissor.png" alt="Immagine sasso">
-        <label for="scissors">Forbici</label>
-      </label>
-    
-      <label class="choises">
-        <input type="radio" id="lucertola" name="choice" value="lizard">
-        <img src="assets/lizard.png" alt="Immagine sasso">
-        <label for="lizard">Lucertola</label>
-      </label>
-    
-      <label class="choises">
-        <input type="radio" id="spock" name="choice" value="spock">
-        <img src="assets/spock.png" alt="Immagine sasso">
-        <label for="spock">Spock</label>
-      </label>
+      <div class="wrapper">
+
+        <div class="group-choises">
+          <label class="choises">
+            <input type="radio" id="sasso" name="choice" value="rock">
+            <img src="assets/rock.png" alt="Immagine sasso">
+            <label for="rock">Sasso</label>
+          </label>
+        
+          <label class="choises">
+            <input type="radio" id="carta" name="choice" value="paper">
+            <img src="assets/paper.png" alt="Immagine sasso">
+            <label for="paper">Carta</label>
+          </label>
+        
+          <label class="choises">
+            <input type="radio" id="forbici" name="choice" value="scissors">
+            <img src="assets/scissor.png" alt="Immagine sasso">
+            <label for="scissors">Forbici</label>
+          </label>
+        
+          <label class="choises">
+            <input type="radio" id="lucertola" name="choice" value="lizard">
+            <img src="assets/lizard.png" alt="Immagine sasso">
+            <label for="lizard">Lucertola</label>
+          </label>
+        
+          <label class="choises">
+            <input type="radio" id="spock" name="choice" value="spock">
+            <img src="assets/spock.png" alt="Immagine sasso">
+            <label for="spock">Spock</label>
+          </label>
+      
+        </div>
+
+        <div class="button-block">
+          <button id="play" disabled>Gioca</button>
+          <h2>Punteggio: <span id="score"></span></h2>
+        </div>
+        
+        
+      </div>
   
+  </main>
+
+  <footer class="footer">
+    <div class="footerLogo">
+        <img src="" alt="">
+        <h1 class="nomeSito"></h1>
+    </div>
+    <div class="pagine">
+        <p>Pagine</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Giochi</a></li>
+            <li><a href="#">Ciao</a></li>
+        </ul>
+    </div>
+    <div class="link">
+        <p>link</p>
+        <ul>
+            <li><a href="#">Coockie Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
     </div>
 
-    <div class="button-block">
-      <button id="play" disabled>Gioca</button>
-      <h2>Punteggio: <span id="score"></span></h2>
-    </div>
-    
-    
-  </div>
-  
-
+    <span>Copyright 2023, I magheggi</span>
+</footer>
 
 
   <script src="SassoCartaForbici.js"></script>
