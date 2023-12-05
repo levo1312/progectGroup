@@ -13,8 +13,8 @@ body {
   background: limegreen;
   display: grid;
   place-items: center;
-  font-size: 32px;
-  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif, serif;
   color: #fff;
 }
 
@@ -28,7 +28,7 @@ body {
   left: 0;
   background: #0d3b66;
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif, serif;
   text-align: center;
 }
 
