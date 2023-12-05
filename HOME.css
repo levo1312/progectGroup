@@ -65,86 +65,16 @@ header nav a:hover::after{
 }
 /* debug per controllo dimenzioni del div */
 
-/* body{
+body{
     font-family: sans-serif;
     width: 100vw;
-    height: 100vh; */
+    height: 100vh;
     /* display: flex; */
-/* }
+}
 
 img{
     max-width: 100px;
-} */
-
-
-
-/* Roberta */
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: grey;
-    font-family: sans-serif;
-    gap: 48px;
 }
-
-.card{
-    width: 300px;
-    background-color: #fff;
-    border-radius: 15px;
-    overflow: hidden; /*taglia tutto ciò che esce dal comtenitore*/
-}
-
-.card img{
-    width: 100%;
-    height: 200px; /*vengono stretchate, allora objeect-fit le taglia per adattarle*/
-    object-fit: cover;
-    object-position: center; /* permette di centrare la foto */
-    transition: transition ease 0.3s, filter ease 10s; /*all ease --s lo applica a tutti gli elementi*/
-}
-
-.img_wrapper{
-    overflow: hidden; /*per tenere dentro l'immagine*/
-    aspect-ratio: 16/9; /*invece dell'altezza*/
-}
-
-.card:hover img{
-    transform: rotate(6deg) scale(1.1); /*scale zoomma, 0 piccolo, 1 normale*/ 
-    filter: sepia(1);
-}
-
-
-/*Meglio evitare e dare le proprietà al genitore*/
-.card h2{
-    margin: 0;
-     margin-bottom: 16px;
-}
-
-.card:hover h2{ /*fa sì che il testo si colori quando si passa su tutta la card*/
-    color: blue;
-}
-
-.card p{
-    margin: 0;
-} 
-
-.card_content{
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px; /*dà una spaziatura uguale a tutti gli elementi della card*/
-}
-
-/* Fine Roberta */
-
-
-
-
-
-
-
-
 
 .buttonGioco{
     background-color: red;
@@ -158,7 +88,7 @@ main{
 }
 
 
-/* .containerCard1, .containerCard2{
+.containerCard1, .containerCard2{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -176,7 +106,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-} */
+}
 
 /* inizio css footer */
 .footer {
