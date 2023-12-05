@@ -4,17 +4,14 @@
     border: 0;
 }
 /*tag*/
-div{
-    border: 2px solid blueviolet;
-}
+
 
 
 
 body{
     background-color: black;
     color: white;
-    
-    
+    font-family: 'Courier New', Courier, monospace;
 }
 
 nav{
@@ -25,7 +22,9 @@ nav{
     padding: 10px;
     justify-content: space-between;
     background-color: aquamarine;
+    
 }
+
 
 /*classi*/
 /*navbar*/
@@ -37,6 +36,8 @@ nav{
 
 .titoloPag{
     text-align: center;
+    color: yellow;
+    font-size: xx-large;
 }
 
 /*menu altri giochi*/
