@@ -13,7 +13,19 @@
                 <img src="" alt="logo della pagina">
             </div>
             <div><h1 class="titoloPag">IMPICCATO</h1></div>
-            <div>MENU(altri giochi)</div>
+            <div>
+                <form >
+                    <label for="cars">GIOCHI:</label>
+                    <select id="pag" name="altriGiochi" aria-placeholder="">
+                        <option value="nessuno"></option>
+                      <option value="sasso carta e forbice">sasso carta e forbice</option>
+                      <option value="memory">memorizza la posizione</option>
+                      <option value="tempo reazione">click veloce</option>
+                      <option value="impiccato">impiccato</option>
+                    </select>
+                    <input type="submit">
+                  </form>
+            </div>
         </nav>
     </header>
     <main>
@@ -33,15 +45,16 @@
         </div>
 
         <div class="interazione">
-                <input type="text" id="inputUtent" placeholder=" inserisci una lettera">
-                <button onclick="game()">INVIA</button>
+            <input type="text" id="inputUtent" placeholder=" inserisci una lettera">
+            <button onclick="game()">INVIA</button>
         </div>
-        <div id="secretWord">
+
+        <div class="secretWord">
             <h1 id="misteryWord">
                 parola da indovinare
             </h1>
         </div>
-        <div class="contenitoreAnimazione">ANIMAZIONE</div>
+        
         <!-- animazione gioco
         all'input del utente provare a posizionare la
         lettera indovinata nella posizione della parola

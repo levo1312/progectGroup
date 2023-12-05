@@ -8,9 +8,13 @@ div{
     border: 2px solid blueviolet;
 }
 
+
+
 body{
     background-color: black;
     color: white;
+    
+    
 }
 
 nav{
@@ -24,6 +28,7 @@ nav{
 }
 
 /*classi*/
+/*navbar*/
 .logo{
     width: 100px;
     height: 100px;
@@ -36,14 +41,43 @@ nav{
 
 /*menu altri giochi*/
 
+/*sezoini descrittiva del gioco*/
+
+.introGame{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .introGame.p{
     text-align: center;
 }
 
-.introGame{
-    align-items: center;
+/*parte interattiva della pag*/
+
+.interazione{
     display: flex;
-    background-color: chocolate;
-    width: 600px;
-    height: 300px;
+    justify-content: center;
+}
+
+input[type="text"], button{
+    margin: 15px;
+}
+
+.interazione button{
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    font-size: 18px;        
+}
+
+/*risultato*/
+
+.secretWord{
+    display: flex;
+    justify-content: center;
 }
