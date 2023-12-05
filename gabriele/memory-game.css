@@ -57,8 +57,10 @@ body {
 
 .contatori .bottone {
   border-radius: 10px;
-  background-color: red;
+  background-color: #F9AC0F;
   font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
 }
 
 @media screen and (max-width: 430px) {
