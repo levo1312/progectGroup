@@ -2,6 +2,56 @@
   box-sizing: border-box;
 }
 
+header{
+  background-color: #ccc;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 16px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+header nav{
+  display: flex;
+  gap: 20px;
+}
+
+header nav a{
+  color: black;
+  text-decoration: none;
+  transition: all ease 200ms;
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+header nav a:hover{
+  color: red;
+  transform: scale(1.2);
+}
+
+header nav a::after{
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: red;
+  display: block;
+  transition: all ease 200ms;
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+}
+
+header nav a:hover::after{
+  width: 100%;
+}
+
 body {
   margin: 0;
 }
