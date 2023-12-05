@@ -96,7 +96,7 @@ function showResult(userChoice, computerChoice) {
                     addTextToSpan(resultDisplay, "Hai perso... Lucertola mangia carta");
                     break;
                 case 'spock':
-                    addTextToSpan(resultDisplay, "Hai vinto! Carta disintegra Spock");
+                    addTextToSpan(resultDisplay, "Hai vinto! Carta confuta Spock");
                     addToScore();
                     break;
 
@@ -164,7 +164,7 @@ function showResult(userChoice, computerChoice) {
                             addToScore();
                             break;
                         case 'carta':
-                            addTextToSpan(resultDisplay, "Hai perso... Carta disintegra Spock");
+                            addTextToSpan(resultDisplay, "Hai perso... Carta confuta Spock");
                             break;
                         case 'forbici':
                             addTextToSpan(resultDisplay, "Hai vinto! Spock frantuma forbici");
