@@ -1,6 +1,7 @@
 //variabili globali
-var arrparSegreta=["ingegni", "cocacola", "cane", "fiori", "cioccolato"];  //parola prova della logica
-let parSegreta = arrparSegreta[Math.floor(random()*arrparSegreta.length)];
+//var arrparSegreta=["ingegni", "cocacola", "cane", "fiori", "cioccolato"];  //parola prova della logica
+//let parSegreta = arrparSegreta[Math.floor(random()*arrparSegreta.length)];
+let parSegreta = "ingegni";
 let tentativi=[];   //traccia delle lettere inserite 
 let vite=6;//parSegreta.length;   //conteggio vite
 
