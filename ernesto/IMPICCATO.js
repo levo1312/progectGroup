@@ -7,24 +7,6 @@ let vite=6;//parSegreta.length;   //conteggio vite
 //logica del gioco
 function indovina(lettera) {
     tentativi.push(lettera);  //traccia lettera inserita
-
-    /*
-    //controllo sul input per vedere se è contenuta nella parola
-    let mess = '';
-    if(parSegreta.includes(lettera)){
-        //console.log(" hai trovato una lettera ",lettera, "è presente nella parola");
-        
-    } else{
-        vite--;
-        //console.log('"', lettera, '" non presente nella porola');
-    }
-    */
-   if(parSegreta.includes(lettera)){
-        mess = "complimenti lettera trovata";
-   }else{
-    vite--;
-    
-   }
     
     let parIndovinata='';   //traccia lettere indovinate
     //ciclo di controllo sulla lettera inserita
@@ -35,6 +17,7 @@ function indovina(lettera) {
             parIndovinata+='_';
         }
     }
+    
 
     if(vite==0){ //vite esaurite
         mess = "GAME OVER hai esaurito i tentativi per trovare la parola segreta:"+ parSegreta;
@@ -44,13 +27,35 @@ function indovina(lettera) {
     }else{  //svolgimento parola 
         mess = "Parola Secreta: " + parIndovinata;
     }
+
+
     document.getElementById("misteryWord").innerHTML = mess;
 }
+
+/*
+da fare:
+    - implementare punteggio
+    - implementare controllo CE
+    
+
+
+//controlla che la lettera in input sia contenuta nella parola
+function controllo() {
+     
+    if(parSegreta.includes(lettera)){
+        mess = "complimenti lettera trovata";
+    }else{
+        vite--;
+        mess = " la lettera scelta non è presente nella parola";
+    }
+}
+*/
 
 
 //gestione input/interazione
 function game(){
     let lettera = document.getElementById("inputUtent").value;
+    
     indovina(lettera);
     document.getElementById("inputUtent").value="";  //pulisce l'input ad ogni tentativo
 }
