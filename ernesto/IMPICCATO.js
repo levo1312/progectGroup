@@ -1,5 +1,5 @@
 //variabili globali
-var arrparSegreta=["ingegni", "cocacola", "cane", "fiori", "cioccolato"];  //parola prova della logica
+var arrparSegreta=["fiori", "cocacola", "cane", "ingegni", "cioccolato"];  //parola prova della logica
 let parSegreta = arrparSegreta[Math.floor(Math.random()*arrparSegreta.length)];
 //let parSegreta = "ingegni";
 let tentativi=[];   //traccia delle lettere inserite 
@@ -22,14 +22,18 @@ function indovina(lettera) {
             }
         }else{
             parIndovinata+='_';
+            vite--;
+            mess = "lettera non presente nella parola";
+            document.getElementById("feedback").innerHTML = mess;
         }
     }
 
     // riduci il numero di vite se la lettera non esiste nella parola segreta
+    /*
     if (!letteEsis) {
-        vite--;
-        mess = "lettera non presente nella parola";
+        
     }
+    */
     
 
     if(vite==0){ //vite esaurite
@@ -43,6 +47,7 @@ function indovina(lettera) {
 
 
     document.getElementById("misteryWord").innerHTML = mess;
+     
 }
 
 
