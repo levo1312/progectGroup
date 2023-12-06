@@ -63,6 +63,7 @@ nav{
 .interazione{
     display: flex;
     justify-content: center;
+    
 }
 
 input[type="text"], button{
@@ -81,4 +82,5 @@ input[type="text"], button{
 .secretWord{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
